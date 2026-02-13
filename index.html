@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Robert Myhren</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;900&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Inter',sans-serif;
+  background:#000;
+  color:white;
+  overflow:hidden;
+}
+
+.split{
+  display:flex;
+  height:100vh;
+  position:relative;
+}
+
+.half{
+  flex:1;
+  position:relative;
+}
+
+.half img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:brightness(0.65);
+}
+
+.overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.4);
+}
+
+.center{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+}
+
+.center h1{
+  font-size:clamp(2.5rem,6vw,5rem);
+  font-weight:900;
+  letter-spacing:-1px;
+}
+
+.linkedin{
+  position:absolute;
+  bottom:30px;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+.linkedin a{
+  color:white;
+  text-decoration:none;
+  font-size:0.9rem;
+  opacity:0.6;
+}
+</style>
+</head>
+<body>
+
+<div class="split">
+  <div class="half">
+    <img src="sailing.png" alt="Seiling">
+    <div class="overlay"></div>
+  </div>
+  <div class="half">
+    <img src="ski.png" alt="Ski">
+    <div class="overlay"></div>
+  </div>
+
+  <div class="center">
+    <h1>Det går.</h1>
+  </div>
+
+  <div class="linkedin">
+    <a href="https://www.linkedin.com/in/robert-myhren-2612941" target="_blank">
+      LinkedIn
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
