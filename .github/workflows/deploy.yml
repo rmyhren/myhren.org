@@ -58,4 +58,4 @@ jobs:
             -e "ssh -i ~/.ssh/id_ed25519 -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes" \
             --exclude ".git" \
             --exclude ".github" \
-            ./ robert@myhren.org:/var/www/robert
+            ./ robert@myhren.org:/home/robert/data/nginx/www/myhren.org
