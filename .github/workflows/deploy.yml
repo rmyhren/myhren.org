@@ -54,10 +54,6 @@ jobs:
 
       - name: Deploy with rsync
         run: |
-          # Enable SSH debug mode
-          ssh -vvv -i ~/.ssh/id_ed25519 -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes robert@myhren.org "echo 'SSH test'" || true
-    
-
           rsync -avz --delete \
             -e "ssh -i ~/.ssh/id_ed25519 -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes" \
             --exclude ".git" \
