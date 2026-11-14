@@ -50,7 +50,7 @@ jobs:
           esac
 
           ssh-keygen -y -f ~/.ssh/id_ed25519 >/dev/null
-          ssh-keyscan -H myhren.org >> ~/.ssh/known_hosts
+          echo 'myhren.org ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOrZGoVS/BqI8cTWnzmlzwND5vfoUkl0fgdLCpyZXO/O' >> ~/.ssh/known_hosts
 
       - name: Deploy with rsync
         run: |
